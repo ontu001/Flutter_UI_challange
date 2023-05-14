@@ -346,6 +346,12 @@ class Task extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 130,),
+            Container(
+              alignment: Alignment.center,
+              padding: EdgeInsets.all(20),
+              child: FloatingActionButton(onPressed: (){},child: Image.network("https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/343969830_968905630784858_5826632218058282741_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHsQt_GZBi8gUprIghNQhxQqfp1FS0z8cyp-nUVLTPxzPYLLbPtRbmhcW5GGNI-hZWTKGTPV8rynqMIgs0sMa0o&_nc_ohc=Lz6UnTSdz6IAX8yoJDY&_nc_ht=scontent.fdac135-1.fna&oh=03_AdROjhvBrIP7xajUKZjzH27xhkCe5OYyursvkJwSMA9Zag&oe=6488B29B"),backgroundColor: Colors.blueGrey,),
+            )
           ],
         ),
 
