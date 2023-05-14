@@ -1,22 +1,26 @@
+
 import 'package:flutter/material.dart';
 
-class Products extends StatelessWidget {
-  const Products({super.key});
+class ProductActivity extends StatelessWidget {
+  const ProductActivity({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(25.0),
+        padding: const EdgeInsets.all(25.0),
         child: Column(
           children: [
-            Container(
-              height: MediaQuery.of(context).size.height / 2,
-              width: MediaQuery.of(context).size.width,
-              child: Image.network(
-                  "https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/346097708_1651348595370965_3981998316299563731_n.png?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHqTk2naCKoMfoefGWBpkX0mwJh2PoDp1mbAmHY-gOnWVnHdVIO4GISupLydibZgGu8M5StyfiW_Ys1sB4htHVy&_nc_ohc=49zAvkWYP94AX_4SQLx&_nc_ht=scontent.fdac135-1.fna&oh=03_AdQto_USQKsLSUZGZbi3Ph6x1KAiNBH0ii1ZR9TlQnzuww&oe=648742C5"),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: SizedBox(
+                height: MediaQuery.of(context).size.height / 2,
+                width: MediaQuery.of(context).size.width,
+                child: Image.network(
+                    "https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/346097708_1651348595370965_3981998316299563731_n.png?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHqTk2naCKoMfoefGWBpkX0mwJh2PoDp1mbAmHY-gOnWVnHdVIO4GISupLydibZgGu8M5StyfiW_Ys1sB4htHVy&_nc_ohc=49zAvkWYP94AX_4SQLx&_nc_ht=scontent.fdac135-1.fna&oh=03_AdTMcHEOdY09adCyYyTDxLHD3xVEfgIL4qdA2P9aYX1AEg&oe=6486D245"),
+              ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Stack(
@@ -24,41 +28,47 @@ class Products extends StatelessWidget {
               clipBehavior: Clip.none,
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height / 3.7,
+                  height: MediaQuery.of(context).size.height / 3.6,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                      border: Border.all(width: 5, color: Colors.grey),
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(50),
-                          topRight: Radius.circular(50))),
+                    color: Colors.white,
+                    border: Border.all(width: 5, color: Color(0xffeceaea)),
+                    borderRadius: const BorderRadius.only(
+                      topRight: Radius.circular(50),
+                      topLeft: Radius.circular(50),
+                    ),
+                  ),
                   child: Padding(
-                    padding: EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Text(
                           "Polex",
                           style: TextStyle(
-                              fontSize: 24,
                               fontWeight: FontWeight.w700,
                               fontFamily: "Segoe UI",
+                              fontSize: 24,
                               color: Colors.black54),
                         ),
+                        SizedBox(
+                          height: 2,
+                        ),
                         Text(
-                          "A567G3",
+                          "A65291",
                           style: TextStyle(
+                            color: Colors.grey,
                             fontSize: 14,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
                         SizedBox(
-                          height: 20,
+                          height: 25,
                         ),
                         Text(
-                          "This model is veeru famous,This isss a very unique watch , you can buy it if you need. This is bassically a gentle man fashionable watche colection",
+                          "This isss a very unique watch , you can buy it if you need. This is bassically a gentle man fashionable watche colection",
                           style: TextStyle(
-                              fontSize: 17,
-                              fontWeight: FontWeight.w600,
+                              fontSize: 16,
                               fontFamily: "Segoe UI",
                               color: Colors.black54),
                         ),
@@ -66,30 +76,27 @@ class Products extends StatelessWidget {
                           height: 15,
                         ),
                         Text(
-                          "\$250",
+                          "\$166",
                           style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                              fontSize: 30,
                               color: Colors.pinkAccent,
-                              fontSize: 30),
+                              fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
                   ),
                 ),
                 Positioned(
-                  bottom: -30,
+                    bottom: -30,
                     child: CircleAvatar(
-                  backgroundColor: Colors.white,
-                  radius: 50,
-                  child: Padding(
-                    padding: EdgeInsets.all(5),
-                    child: FloatingActionButton(
-                      onPressed: () {},
-                      child: Image.network(
-                          "https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/346098263_177845528204520_7930323926911167392_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHdBVlPifGzPDsBIiIJFWvINCeQpppnmBc0J5CmmmeYF5LhBCQMD-e4bQ-dVkUihQ0SXAItpDk3S0BotYE4q6Yu&_nc_ohc=08pi4V8JlwgAX-jxcx5&_nc_ht=scontent.fdac135-1.fna&oh=03_AdT6oKw_9gUcjRkH3kJcql-PBu-F4t7AK1a50nhXAlUvwA&oe=64872CA9"),
-                    ),
-                  ),
-                ))
+                      backgroundColor: Colors.white,
+
+                      radius: 30,
+                      child: Padding(
+                        padding: const EdgeInsets.all(7),
+                        child: FloatingActionButton(onPressed: (){}, child: Image.network("https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/346098263_177845528204520_7930323926911167392_n.png?stp=cp0_dst-png&_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHdBVlPifGzPDsBIiIJFWvINCeQpppnmBc0J5CmmmeYF5LhBCQMD-e4bQ-dVkUihQ0SXAItpDk3S0BotYE4q6Yu&_nc_ohc=08pi4V8JlwgAX-jxcx5&_nc_ht=scontent.fdac135-1.fna&oh=03_AdTfaIvuPiukpnTjOcSFE-LJEbv7TjLvlhH3Z0wrF8QQiA&oe=6486F469"),),
+                      ),
+                    ))
               ],
             ),
           ],
