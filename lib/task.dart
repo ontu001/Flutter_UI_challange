@@ -9,7 +9,7 @@ class Task extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(25.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
 
           children: [
             Row(
@@ -346,9 +346,9 @@ class Task extends StatelessWidget {
                 ],
               ),
             ),
-            FloatingActionButton(onPressed: (){},child: Icon(Icons.add),)
           ],
         ),
+
       ),
     );
   }
