@@ -23,9 +23,6 @@ class HomeActivity extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.indigo,
-      appBar: AppBar(backgroundColor: Colors.indigo,elevation: 0,leading: IconButton(icon: Icon(Icons.arrow_back),onPressed: (){}),actions: [
-        IconButton(onPressed: (){}, icon: Icon(Icons.notifications))
-      ],),
       body: Padding(
         padding: EdgeInsets.all(25.0),
         child: Column(
