@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_flutter_ui/profile.dart';
 import 'package:new_flutter_ui/task.dart';
 import 'Product.dart';
 
@@ -44,18 +45,25 @@ class HomeActivity extends StatelessWidget {
             SizedBox(height: 50,),
             Container(
               alignment: Alignment.center,
-              child: Column(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     child: ElevatedButton(onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductActivity()));
                     }, child: Text("Polex")),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(width: 10,),
                   Container(
                     child: ElevatedButton(onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context)=>Task()));
                     }, child: Text("Task")),
+                  ),SizedBox(width: 10,),
+
+                  Container(
+                    child: ElevatedButton(onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Profile()));
+                    }, child: Text("Profile")),
                   ),
                 ],
               ),

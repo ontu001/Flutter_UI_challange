@@ -7,21 +7,32 @@ class Task extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blueGrey,
       body: Padding(
-        padding: EdgeInsets.all(25.0),
+        padding: EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
 
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text(
-                  "ROHANUR RAHMAN",
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white,
-                      fontFamily: "Segoe UI"),
+              children: [
+                SizedBox(height: 50,),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "ROHANUR RAHMAN",
+                      style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.white,
+                          fontFamily: "Segoe UI"),
+                    ),
+                    Text(
+                      "Tech Enthusasist",
+                      style: TextStyle(
+                          fontSize: 17, fontFamily: "Segoe UI", color: Colors.white),
+                    ),
+                  ],
                 ),
                 CircleAvatar(
                   radius: 46,
@@ -29,13 +40,6 @@ class Task extends StatelessWidget {
                       "https://scontent.fdac135-1.fna.fbcdn.net/v/t39.30808-6/332465989_782371076619305_126017267244948830_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE2kwAVkJnT9a4QQU0WwxdabTFqd8gzDCptMWp3yDMMKm7hQbaqxhkm_TwyiNO8Y-RtP8iXOFtQXDBYLJFgzl-R&_nc_ohc=UGevweHJJtgAX_0ceGX&_nc_ht=scontent.fdac135-1.fna&oh=00_AfApO7zzOOKCKKKwiq5hE9SI1kckq14AG-fq1eiLE36wDg&oe=64657288"),
                 ),
               ],
-            ),
-            Container(
-              child: Text(
-                "Tech Enthusasist",
-                style: TextStyle(
-                    fontSize: 17, fontFamily: "Segoe UI", color: Colors.white),
-              ),
             ),
             SizedBox(
               height: 180,
