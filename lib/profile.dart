@@ -189,6 +189,37 @@ class Profile extends StatelessWidget {
                 Container(
                   height: MediaQuery.of(context).size.height / 6.7,
                   width: MediaQuery.of(context).size.width,
+                  child: Padding(padding: EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Day",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),),
+                      SizedBox(height: 20,),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+                                 
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                              child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                          ],
+
+                        ),
+                      ),
+                    ],
+                  ),
+                  ),
                 ),
                 Container(
                   alignment: Alignment.bottomCenter,
