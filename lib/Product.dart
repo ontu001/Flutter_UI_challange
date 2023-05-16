@@ -1,12 +1,19 @@
 
 import 'package:flutter/material.dart';
 
+import 'main.dart';
+
 class ProductActivity extends StatelessWidget {
   const ProductActivity({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(backgroundColor: Colors.white,elevation: 0,leading: IconButton(icon: Icon(Icons.arrow_back,color: Colors.black,),onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeActivity()));}),actions: [
+        IconButton(onPressed: (){
+
+        }, icon: Icon(Icons.notifications,color: Colors.black,))
+      ],),
       body: Padding(
         padding: const EdgeInsets.all(25.0),
         child: Column(

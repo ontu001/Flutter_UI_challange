@@ -1,11 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'main.dart';
+
 class Task extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blueGrey,
+      appBar: AppBar(backgroundColor: Colors.blueGrey,elevation: 0,leading: IconButton(icon: Icon(Icons.arrow_back,color: Colors.black,),onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeActivity()));}),actions: [
+        IconButton(onPressed: (){
+
+        }, icon: Icon(Icons.notifications,color: Colors.black,))
+      ],),
       body: Padding(
         padding: EdgeInsets.all(20.0),
         child: Column(
