@@ -6,9 +6,9 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white70,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white70,
+        backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
             icon: Icon(
@@ -192,6 +192,7 @@ class Profile extends StatelessWidget {
                   child: Padding(padding: EdgeInsets.all(20),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+
                     children: [
                       Text("Day",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),),
                       SizedBox(height: 20,),
@@ -213,6 +214,293 @@ class Profile extends StatelessWidget {
                               child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
                               ),
                             ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.orangeAccent,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 37,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("2",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 10),),
+                              ),
+                            ),
+                            SizedBox(width: 10,),
+
                           ],
 
                         ),
@@ -222,7 +510,6 @@ class Profile extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  alignment: Alignment.bottomCenter,
                   height: MediaQuery.of(context).size.height / 6.7,
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
@@ -230,6 +517,52 @@ class Profile extends StatelessWidget {
                     borderRadius: BorderRadius.only(
                       topRight: Radius.circular(40.0),
                       topLeft: Radius.circular(40.0),
+                    ),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Time",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.white),),
+                        SizedBox(height: 20,),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.orangeAccent,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 62,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("10:00",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 15),),
+                              ),
+                            ),
+                            SizedBox(width: 5,),
+                            Text("-",style: TextStyle(fontSize: 30,color: Colors.white),),
+                            SizedBox(width: 5,),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.orangeAccent,
+                                border: Border.all(width: 1, color: Colors.white),
+                                borderRadius: BorderRadius.all(Radius.circular(30)
+
+                                ),
+                              ),
+                              height: 37,
+                              width: 62,
+                              child: Padding(padding: EdgeInsets.all(10),
+                                child: Text("10:00",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 15),),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                 ),

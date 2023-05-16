@@ -35,7 +35,7 @@ class Task extends StatelessWidget {
                           fontFamily: "Segoe UI"),
                     ),
                     Text(
-                      "Tech Enthusasist",
+                      "Travel | Code | Cybe Srcurity",
                       style: TextStyle(
                           fontSize: 17, fontFamily: "Segoe UI", color: Colors.white),
                     ),
@@ -49,7 +49,7 @@ class Task extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 180,
+              height: 100,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -92,6 +92,7 @@ class Task extends StatelessWidget {
                                 fontFamily: "Segoe UI",
                                 color: Colors.black54),
                           ),
+                          SizedBox(height: 31,),
                           SizedBox(height: 31,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
