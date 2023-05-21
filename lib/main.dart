@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:new_flutter_ui/profile.dart';
 import 'package:new_flutter_ui/task.dart';
 import 'Product.dart';
@@ -21,9 +24,68 @@ class MyApp extends StatelessWidget {
 
 
 class HomeActivity extends StatelessWidget {
+  _getOutOfApp(){
+    if (Platform.isIOS){
+      try{
+        exit(0);
+      } catch(e){
+        print(e);
+      }
+    }
+    else{
+      try{
+        SystemNavigator.pop();
+      } catch(e){
+        print(e);
+      }
+    }
+  }
+
+  exitDialogue(context){
+    showDialog(
+        context: context, builder: (context)
+
+        {
+          return Dialog(
+            child: Container(
+              height: 110,
+              color: Colors.indigo,
+
+              child: Padding(
+                padding: EdgeInsets.only(left : 20, top:30),
+
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("Do you want to exit ?",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ElevatedButton(onPressed: ()=>_getOutOfApp(), child: Text("Yes")),
+                        VerticalDivider(),
+                        ElevatedButton(onPressed: ()=>Navigator.pop(context), child: Text("No")),
+
+                      ],
+                    ),
+
+
+
+
+                  ],
+                ),
+              ),
+            ),
+          );
+        }
+
+    );
+  }
+
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return WillPopScope(child: Scaffold(
       backgroundColor: Colors.indigo,
       body: Padding(
         padding: EdgeInsets.all(25.0),
@@ -39,39 +101,99 @@ class HomeActivity extends StatelessWidget {
 
             ),
             Text("Choose Your Item",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,color: Colors.white),),
-            SizedBox(height: 10,),
+            VerticalDivider(),
             Text("Make your Profile",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,color: Colors.white),),
-            SizedBox(height: 10,),
             Text("Enjoy Your Life",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,color: Colors.white),),
-            SizedBox(height: 50,),
-            Container(
-              alignment: Alignment.center,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    child: ElevatedButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductActivity()));
-                    }, child: Text("Polex")),
-                  ),
-                  SizedBox(width: 10,),
-                  Container(
-                    child: ElevatedButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Task()));
-                    }, child: Text("Task")),
-                  ),SizedBox(width: 10,),
+            SizedBox(height: 40,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Profile()));
+                  }
+                  ,
+                  child: Container(
+                    height: 50,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(40.0),
+                          bottomRight: Radius.circular(40.0),
+                          topLeft: Radius.circular(40.0),
+                          bottomLeft: Radius.circular(40.0)),
+                    ),
+                    child: Center(
+                      child: Padding(padding: EdgeInsets.all(15.0),
+                        child: Text("Profile"),
+                      ),
+                    ),
 
-                  Container(
-                    child: ElevatedButton(onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Profile()));
-                    }, child: Text("Profile")),
                   ),
-                ],
-              ),
+                ),
+                InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Task()));
+
+                  },
+                  splashColor: Colors.blue,
+                  child:Ink(
+                    height: 50,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(40.0),
+                          bottomRight: Radius.circular(40.0),
+                          topLeft: Radius.circular(40.0),
+                          bottomLeft: Radius.circular(40.0)),
+                    ),
+                    child: Center(
+                      child: Padding(padding: EdgeInsets.all(15.0),
+                        child: Text("Task"),
+                      ),
+                    ),
+
+                  ) ,
+                ),
+
+                InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductActivity()));
+
+                  },
+                  splashColor: Colors.blue,
+                  child:Ink(
+                    height: 50,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(40.0),
+                          bottomRight: Radius.circular(40.0),
+                          topLeft: Radius.circular(40.0),
+                          bottomLeft: Radius.circular(40.0)),
+                    ),
+                    child: Center(
+                      child: Padding(padding: EdgeInsets.all(15.0),
+                        child: Text("Product"),
+                      ),
+                    ),
+
+                  ) ,
+                ),
+
+              ],
             ),
+
           ],
         ),
       ),
-    );
+    ), onWillPop: (){
+      exitDialogue(context);
+      return Future.value(false);
+
+    });
   }
 }

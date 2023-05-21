@@ -534,7 +534,6 @@ class Profile extends StatelessWidget {
                                 color: Colors.orangeAccent,
                                 border: Border.all(width: 1, color: Colors.white),
                                 borderRadius: BorderRadius.all(Radius.circular(30)
-
                                 ),
                               ),
                               height: 37,
@@ -551,7 +550,6 @@ class Profile extends StatelessWidget {
                                 color: Colors.orangeAccent,
                                 border: Border.all(width: 1, color: Colors.white),
                                 borderRadius: BorderRadius.all(Radius.circular(30)
-
                                 ),
                               ),
                               height: 37,
