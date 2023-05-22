@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:new_flutter_ui/main.dart';
 
+import 'homepage.dart';
+
 class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

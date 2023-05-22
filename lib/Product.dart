@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 
+import 'homepage.dart';
 import 'main.dart';
 
 class ProductActivity extends StatelessWidget {
@@ -18,15 +19,12 @@ class ProductActivity extends StatelessWidget {
         padding: const EdgeInsets.all(25.0),
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: SizedBox(
+             SizedBox(
                 height: MediaQuery.of(context).size.height / 2,
                 width: MediaQuery.of(context).size.width,
                 child: Image.network(
                     "https://scontent.fdac135-1.fna.fbcdn.net/v/t1.15752-9/346097708_1651348595370965_3981998316299563731_n.png?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHqTk2naCKoMfoefGWBpkX0mwJh2PoDp1mbAmHY-gOnWVnHdVIO4GISupLydibZgGu8M5StyfiW_Ys1sB4htHVy&_nc_ohc=49zAvkWYP94AX_4SQLx&_nc_ht=scontent.fdac135-1.fna&oh=03_AdTMcHEOdY09adCyYyTDxLHD3xVEfgIL4qdA2P9aYX1AEg&oe=6486D245"),
               ),
-            ),
             const SizedBox(
               height: 10,
             ),
