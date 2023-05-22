@@ -6,6 +6,8 @@ import 'package:new_flutter_ui/profile.dart';
 import 'package:new_flutter_ui/task.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
+
+
 void main() {
   runApp(MyApp());
 }
@@ -22,7 +24,7 @@ class _MyAppState extends State<MyApp> {
   final pages= [
     HomeActivity(),
     Task(),
-    ProductActivity(),
+    const ProductActivity(),
     PD(),
     Profile(),
   ];
@@ -82,10 +84,7 @@ class _MyAppState extends State<MyApp> {
             ),
           ],
         ),
-
-
         body: pages[_currentIndex],
-
       ),
     );
   }

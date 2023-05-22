@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:new_flutter_ui/camera.dart';
 import 'package:new_flutter_ui/product_description.dart';
 import 'package:new_flutter_ui/profile.dart';
 import 'package:new_flutter_ui/task.dart';
@@ -216,6 +217,32 @@ class HomeActivity extends StatelessWidget {
                             child: Padding(
                               padding: EdgeInsets.all(15.0),
                               child: Text("Task"),
+                            ),
+                          ),
+                        ),
+                      ),
+                      VerticalDivider(),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Camera()));
+                        },
+                        splashColor: Colors.blue,
+                        child: Ink(
+                          height: 50,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(40.0),
+                                bottomRight: Radius.circular(40.0),
+                                topLeft: Radius.circular(40.0),
+                                bottomLeft: Radius.circular(40.0)),
+                          ),
+                          child: Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(15.0),
+                              child: Text("Camera"),
                             ),
                           ),
                         ),
