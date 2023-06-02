@@ -283,8 +283,34 @@ class HomeActivity extends StatelessWidget {
                         },
                         splashColor: Colors.blue,
                         child: Ink(
+                          height: 65,
+                          width: 110,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(40.0),
+                                bottomRight: Radius.circular(40.0),
+                                topLeft: Radius.circular(40.0),
+                                bottomLeft: Radius.circular(40.0)),
+                          ),
+                          child: Center(
+                            child: Padding(
+                              padding: EdgeInsets.all(15.0),
+                              child: Text("Product Description"),
+                            ),
+                          ),
+                        ),
+                      ),
+                      VerticalDivider(),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => PD()));
+                        },
+                        splashColor: Colors.blue,
+                        child: Ink(
                           height: 50,
-                          width: 150,
+                          width: 110,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.only(
@@ -295,7 +321,7 @@ class HomeActivity extends StatelessWidget {
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(15.0),
-                            child: Text("Product Description"),
+                            child: Text("Animation"),
                           ),
                         ),
                       ),
