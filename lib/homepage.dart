@@ -2,11 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:new_flutter_ui/animationchecker.dart';
 import 'package:new_flutter_ui/camera.dart';
 import 'package:new_flutter_ui/product_description.dart';
 import 'package:new_flutter_ui/profile.dart';
+import 'package:new_flutter_ui/satet_management.dart';
 import 'package:new_flutter_ui/task.dart';
 import 'Product.dart';
+import 'animation.dart';
 
 class HomeActivity extends StatelessWidget {
   _getOutOfApp() {
@@ -304,8 +307,7 @@ class HomeActivity extends StatelessWidget {
                       VerticalDivider(),
                       InkWell(
                         onTap: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => PD()));
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Animationn()));
                         },
                         splashColor: Colors.blue,
                         child: Ink(
@@ -322,6 +324,52 @@ class HomeActivity extends StatelessWidget {
                           child: Padding(
                             padding: EdgeInsets.all(15.0),
                             child: Text("Animation"),
+                          ),
+                        ),
+                      ),
+                      VerticalDivider(),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>CheckButton()));
+                        },
+                        splashColor: Colors.blue,
+                        child: Ink(
+                          height: 50,
+                          width: 110,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(40.0),
+                                bottomRight: Radius.circular(40.0),
+                                topLeft: Radius.circular(40.0),
+                                bottomLeft: Radius.circular(40.0)),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.all(15.0),
+                            child: Text("Button"),
+                          ),
+                        ),
+                      ),
+                      VerticalDivider(),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>StateChange()));
+                        },
+                        splashColor: Colors.blue,
+                        child: Ink(
+                          height: 50,
+                          width: 110,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                                topRight: Radius.circular(40.0),
+                                bottomRight: Radius.circular(40.0),
+                                topLeft: Radius.circular(40.0),
+                                bottomLeft: Radius.circular(40.0)),
+                          ),
+                          child: Padding(
+                            padding: EdgeInsets.all(15.0),
+                            child: Text("State"),
                           ),
                         ),
                       ),
