@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:new_flutter_ui/another.dart';
 
 class StateChange extends StatefulWidget {
   @override
@@ -58,7 +59,16 @@ class StateChangeState extends State<StateChange> {
                       result = fn + snd;
                     });
                   },
-                  child: Text("Calculate"))
+                  child: Text("Calculate")),
+              SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Another(result)));
+                  },
+                  child: Text("Pass")),
+
             ],
           ),
         ),
